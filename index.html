@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header flex">
+    <img src="images/logo.svg" alt="company logo" class="logo">
+    <div class="dropdownBackground">  </div>
+    <nav class="navbar flex">
+      <div class="navbar-left flex">
+        <ul class="snap navbar-left main-nav-list flex">
+          <li>
+            <a href="#" class="nav-link modal-link">Features</a><img src="images/icon-arrow-down.svg" alt="arrow-down" class="down-arrow"><img src="images/icon-arrow-up.svg" alt="arrow-up" class="up-arrow">
+   
+            <div class="dropdown features">
+              <div class="feature flex">
+                <img src="images/icon-todo.svg" alt="icon-todo" class="features-images">
+                <a href="#" class="features-links nav-link">Todo List</a>
+              </div>
+              <div class="feature flex">
+                <img src="images/icon-calendar.svg" alt="icon-calendar" class="features-images">
+                <a href="#" class="features-links nav-link">Calendar</a>
+              </div>
+              <div class="feature flex">
+                <img src="images/icon-reminders.svg" alt="icon-reminders" class="features-images">
+                <a href="#" class="features-links nav-link">Reminders</a>
+              </div>
+              <div class="feature flex">
+                <img src="images/icon-planning.svg" alt="icon-planning" class="features-images">
+                <a href="#" class="features-links nav-link">Planning</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nav-link modal-link">Company</a><img src="images/icon-arrow-down.svg" alt="arrow-down" class="down-arrow"><img src="images/icon-arrow-up.svg" alt="arrow-up" class="up-arrow">
+          
+            <ul class="dropdown company ">
+              <li>
+                <a href="#" class="nav-link-company">History</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link-company">Our Team</a>
+              </li>
+              <li>
+                <a href="#" class=" nav-link-company">Blog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+ 
+        <a href="#" class="nav-link">Careers</a>
+        <a href="#" class="nav-link">About</a>
+      </div>     
+    
+      <div class="navbar-right flex">
+        <a href="#" class="nav-link">Login</a>
+        <button class="btn-navbar"><a href="#" class="nav-link">Register</a></button>
+      </div>
+    </nav>
+    <button class="btn-mobile-nav">
+      <img src="images/icon-menu.svg" alt="icon-menu" class="icon-mobile-nav" id="menu-outline">
+      <img src="images/icon-close-menu.svg" alt="icon-close-menu" class="icon-mobile-nav" id="close-outline">
+    </button>
+  </header>
+  <main>
+  <!-- HERO-SECTION -->
+    <section class="hero-section flex">
+      <div class="hero-section-left flex">
+        <div class="hero-main-content">
+        <h1>Make<br class="br-mobile-none"> remote work</h1>
+        <p> Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <button class="btn-learn-more">Learn more</button>
+      </div>
+  <!-- CLIENTS -->
+      <div class="clients flex">
+        <img src="images/client-databiz.svg" alt="image databiz" class="client-image">
+        <img src="images/client-audiophile.svg" alt="image audiophile" class="client-image">
+        <img src="images/client-meet.svg" alt="image meet" class="client-image">
+        <img src="images/client-maker.svg" alt="image maker" class="client-image">
+      </div>
+      </div>
+      <div class="hero-section-right">
+        <img src="images/image-hero-desktop.png" alt="hero-image" class=" hero-desktop-image">
+        <img src="images/image-hero-mobile.png" alt="hero-image-mobile" class=" hero-mobile-image">
+      </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">bc464</a>.
+  </div>
+</body>
+</html>
